@@ -3,9 +3,9 @@ public class Bank {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Gehaltskonto MaxMustermann = new Gehaltskonto();
-		Gehaltskonto HansMeier = new Gehaltskonto();
-		Gehaltskonto OttoNormalverbraucher = new Gehaltskonto();
+		Gehaltskonto MaxMustermann = new Gehaltskonto("Max Mustermann", 1111, 2222);
+		Gehaltskonto HansMeier = new Gehaltskonto("Hans Meier", 3333, 4444);
+		Gehaltskonto OttoNormalverbraucher = new Gehaltskonto("Otto Normalverbraucher", 5555, 6666);
 		
 		// Warum muss das gemacht werden?
 		MaxMustermann.setInhaber("MaxMustermann");

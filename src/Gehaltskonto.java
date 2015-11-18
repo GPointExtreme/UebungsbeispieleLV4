@@ -7,12 +7,24 @@ public class Gehaltskonto {
 	private String BIC;
 	private double Kontostand;
 	
-	//Warum kommen in die Klammer "String Inhaber"? Wo sollen IBAN und BIC verwendet werden?
+	public Gehaltskonto(String Inhaber, String IBAN, String BIC) {
+		this.Inhaber = Inhaber;
+		Kontostand = 0;
+	}
+	
+	//Warum kommen in die Klammer "String Inhaber"?
 	public void setInhaber(String Inhaber) {
 		this.Inhaber = Inhaber;
-		this.IBAN = IBAN; //Fragen ob das hier so stimmt
-		this.BIC = BIC; //und ob diese überhaupt verwendet werden sollen
-		Kontostand = 0;
+	}
+	
+	//Getter Setter Methode
+	public void setIBAN(String IBAN) {
+		this.IBAN = IBAN;
+	}
+	
+	//Getter Setter Methode
+	public void setBIC(String BIC) {
+		this.BIC = BIC;
 	}
 	
 	public void aufbuchen (double wert) {
@@ -28,6 +40,7 @@ public class Gehaltskonto {
 		}
 	}
 	
+	//Getter Methode für Kontostand
 	public double getKontostand () {
 		return Kontostand;
 	}
