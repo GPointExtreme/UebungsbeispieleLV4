@@ -2,7 +2,7 @@
 public class Bank {
 
 	public static void main(String[] args) {
-		// Konstruktor befüllen. Funktioniert noch nicht! Warum?
+		// Konstruktor befüllen.
 		Gehaltskonto MaxMustermann = new Gehaltskonto("Max Mustermann", "1111", "2222");
 		Gehaltskonto HansMeier = new Gehaltskonto("Hans Meier", "3333", "4444");
 		Gehaltskonto OttoNormalverbraucher = new Gehaltskonto("Otto Normalverbraucher", "5555", "6666");
